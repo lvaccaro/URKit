@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import WolfBase
 
 public enum BytewordsDecodingError: LocalizedError {
     case invalidWord

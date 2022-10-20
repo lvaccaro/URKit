@@ -1,7 +1,6 @@
 // Originally based on: https://github.com/myfreeweb/SwiftCBOR
 
 import Foundation
-import WolfBase
 
 enum DiagItem {
     case item(String)

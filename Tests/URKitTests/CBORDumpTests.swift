@@ -1,6 +1,5 @@
 import Foundation
 import XCTest
-import WolfBase
 import URKit
 
 class CBORDumpTests: XCTestCase {

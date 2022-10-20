@@ -2,7 +2,6 @@
 // License: Public Domain
 
 import Foundation
-import WolfBase
 
 public protocol CBOREncodable {
     var cborEncode: Data { get }
