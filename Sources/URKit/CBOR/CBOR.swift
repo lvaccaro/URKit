@@ -176,7 +176,12 @@ extension CBOR {
                 comment: nil
             )
         case .date(let date):
-            return .item(date.ISO8601Format().flanked("1(", ")"))
+            if #available(iOS 15.0, *) {
+                return .item(date.ISO8601Format().flanked("1(", ")"))
+            } else {
+                // TODO: date encoding for ios < 15
+                return .item(date.description.flanked("1(", ")"))
+            }
         default:
             fatalError()
         }

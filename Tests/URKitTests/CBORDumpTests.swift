@@ -114,6 +114,7 @@ class CBORDumpTests: XCTestCase {
         XCTAssertEqual(d, expected)
     }
 
+    @available(iOS 15.0, *)
     func testDate() {
         let d = try! Date("2022-03-21T00:00:00Z", strategy: .iso8601)
         XCTAssertEqual(CBOR.date(d).dump, "c1 1a6237c000 # date(2022-03-21 00:00:00 +0000)")
