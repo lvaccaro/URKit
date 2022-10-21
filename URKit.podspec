@@ -24,9 +24,10 @@ by Wolf McNally and Christopher Allen
 
   s.homepage         = 'https://github.com/BlockchainCommons/URKit'
   s.license          = { :type => 'BSD-2', :file => 'LICENSE.md' }
-  s.author           = { 'lvaccaro' => 'me@lvaccaro.com' }
-  s.source           = { :git => 'https://github.com/lvaccaro/URKit.git', :branch => 'bs' }
+  s.author           = { 'lvaccaro' => 'me@lvaccaro.com'Podfile }
+  s.source           = { :git => 'https://github.com/lvaccaro/URKit.git', :tag => s.version.to_s }
 
+  s.swift_version = '5.0'
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'Sources/**/*'
